@@ -2,9 +2,10 @@
 
 
 
-let a = document.getElementById("textfile");
+document.getElementById("textfile").onclick=a;
 
-a.onclick = function() {
-    document.location.href = "https://chipset-net-web.github.io/text-file-chat-3/";
+function a () {
+    
+document.location.href = "https://chipset-net-web.github.io/text-file-chat-3/";
 
 }
