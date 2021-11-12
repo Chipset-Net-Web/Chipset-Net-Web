@@ -2,7 +2,7 @@
 
 
 
-document.getElementById("textfile").onclick=a;
+document.getElementById("b").onclick=a;
 
 function a () {
     
