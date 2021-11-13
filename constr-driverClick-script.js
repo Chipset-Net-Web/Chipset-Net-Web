@@ -2,9 +2,10 @@
 
 
 
-let a = document.querySelector('img');
+//let a = document.querySelector('img');
+let a = document.getElementById("videochat");
 
-document.getElementById("b").onclick=b;
+let b = document.getElementById("textfilechat");
 
 a.onclick = function() {
     document.location.href = "https://chipset-net-web.github.io/chipset-net-web-video-chat-1/";
@@ -12,7 +13,7 @@ a.onclick = function() {
 }
 
 
-function b () {
+b.onclick = function () {
     
 document.location.href = "https://chipset-net-web.github.io/text-file-chat-3/";
 
