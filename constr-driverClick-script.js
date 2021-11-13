@@ -2,7 +2,8 @@
 
 
 
-//let a = document.querySelector('img');
+/*let a = document.querySelector('img');*/
+
 let a = document.getElementById("videochat");
 
 let b = document.getElementById("textfilechat");
