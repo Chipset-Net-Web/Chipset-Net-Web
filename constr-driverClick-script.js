@@ -8,6 +8,8 @@ let a = document.getElementById("videochat");
 
 let b = document.getElementById("textfilechat");
 
+Let c = document.getElementById("textvideochat");
+
 a.onclick = function() {
     document.location.href = "https://chipset-net-web.github.io/chipset-net-web-video-chat-1/";
 
@@ -17,5 +19,12 @@ a.onclick = function() {
 b.onclick = function () {
     
 document.location.href = "https://chipset-net-web.github.io/text-file-chat-3/";
+
+}
+
+c.onclick = function () {
+
+document.location.href = "https://chipset-net-web.github.io/chat-video-text-1/";
+
 
 }
