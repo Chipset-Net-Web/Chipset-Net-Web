@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    background-image: url("https://64.media.tumblr.com/d19d143899b76534281df03e84dcaebe/c0543db4c526b7ce-ed/s1280x1920/f5f87155e50fe39499e20a71b670d2d66cb76435.jpg");
+}
+
+header {
+    color: rgb(252, 252, 252);
+    background: rgba(11, 9, 83, 0.479);
+}
+
+h1 {
+    color: rgb(18, 85, 82);
+    background: #e7e6b7b2;
+    font-size: 40px;
+}
+
+h2 {
+    color: rgb(243, 242, 236);
+    background: #1b0e4e91;
+    font-size: 30px;
+}
+
+p {
+color: white;
+background: black;
+font-size:20px;
+
+
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 2fr 1fr 1fr;
+    grid-template-areas: "r l" "r n" "c c";
+    grid-gap: 3px;
+}
+
+.remoteVideo {
+    grid-area: r;
+}
+
+#remoteVideo {
+    max-height: 750px;
+}
+
+.localVideo {
+    grid-area: l;
+}
+
+.notificationsBox {
+    background-color: red;
+    grid-area: n;
+}
+
+.chatBox {
+    background-color: green;
+    grid-area: c;
+}
+
+textarea {
+    width: -webkit-fill-available;
+    height: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    width: 95%;
+    height:100px;
+}
+
+button {
+width: 300px;
+height:100px;
+font-size: 26px;
+color: #fff587 ;
+
+}
+
+.header-title {
+    background-color: #0b4752;
+    color: #fff;
+    padding: 10px;
+}

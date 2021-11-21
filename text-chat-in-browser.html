@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+
+    <title> </title>
+
+    <style>
+        body {
+            background-image: url(https://64.media.tumblr.com/d19d143899b76534281df03e84dcaebe/c0543db4c526b7ce-ed/s1280x1920/f5f87155e50fe39499e20a71b670d2d66cb76435.jpg);
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            background: #0a14e576;
+        }
+        
+        section {
+            display: flex;
+            align-items: center;
+            /*justify-content: center;*/
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 16px;
+            height: 100vh;
+        }
+        
+        .content {
+            background: #dddcb3;
+            box-shadow: rgba(156, 172, 172, 0.2) 0px 2px 2px, rgba(156, 172, 172, 0.2) 0px 4px 4px, rgba(156, 172, 172, 0.2) 0px 8px 8px, rgba(156, 172, 172, 0.2) 0px 16px 16px, rgba(156, 172, 172, 0.2) 0px 32px 32px, rgba(156, 172, 172, 0.2) 0px 64px 64px;
+            border-radius: 3px;
+            height: 100vh;
+            max-height: 600px;
+            /*width: 100%;*/
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .messages {
+            flex-grow: 1;
+            padding: 20px 30px;
+            overflow: auto;
+        }
+        
+        .message {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .message--mine {
+            align-items: flex-end;
+        }
+        
+        .message--theirs {
+            align-items: flex-start;
+        }
+        
+        .message__name {
+            padding: 10px 0;
+        }
+        
+        .message__bubble {
+            padding: 20px;
+            border-radius: 3px;
+        }
+        
+        .message--theirs .message__bubble {
+            background: #6363bf;
+            color: white;
+        }
+        
+        .message--mine .message__bubble {
+            background: rgba(156, 172, 172, 0.2);
+        }
+        
+        .footer {
+            line-height: 76px;
+            border-top: 1px solid rgba(156, 172, 172, 0.2);
+            display: flex;
+            flex-shrink: 0;
+        }
+        
+        input {
+            height: 76px;
+            border: none;
+            flex-grow: 1;
+            padding: 0 30px;
+            font-size: 16px;
+            background: transparent;
+        }
+        
+        button {
+            border: none;
+            background: transparent;
+            padding: 0 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>WEBrtc-Text-Chat</h1>
+        <h2>ChipsetNetWeb</h2>
+        <h3>Idea by Webten Netbew</h3>
+
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0%" y="0%" width="70%" height="70%" viewBox="0 0 24.0 24.0" enable-background="new 0 0 24.0 24.0" xml:space="preserve">
+<defs>
+	<linearGradient id="fillGrad3" x1="1.204%" y1="54.488%" x2="100.000%" y2="50.000%">
+   		<stop offset="0.000%" style="stop-color:rgb(255,0,0);stop-opacity:1.000" />
+		<stop offset="50.000%" style="stop-color:rgb(0,255,0);stop-opacity:1.000" />
+		<stop offset="100.000%" style="stop-color:rgb(0,0,255);stop-opacity:1.000" />
+	</linearGradient>
+
+	<style type="text/css">
+		@font-face {
+			font-family: 'lora'; 
+			src: url('./lora.ttf');
+		}
+	</style>
+</defs>
+	<path
+		fill="#FFFFFF"
+		stroke="#000000"
+		fill-opacity="0.000"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.0"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M0.00,0.00L24.00,0.00L24.00,24.00L0.00,24.00z"/>
+	<path
+		fill="#57ABFF"
+		stroke="#040404"
+		fill-opacity="0.490"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.24"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M0.76,4.85L20.97,4.85L20.97,14.62L0.76,14.62z"/>
+	<path
+		fill="#00CF28"
+		stroke="#060606"
+		fill-opacity="0.224"
+		stroke-opacity="1.000"
+		fill-rule="nonzero"
+		stroke-width="0.24"
+		stroke-linejoin="miter"
+		stroke-linecap="square"
+		d="M3.27,9.69L23.22,9.69L23.22,19.95L3.27,19.95z"/>
+
+	<text 
+		font-size="3.9241338"
+		font-family="lora"
+		stroke-width="0.24"
+		stroke="#000000"
+		stroke-opacity="1.000"
+		fill-opacity="0"
+		text-anchor="start"
+  		transform="rotate(-0.0 12.2333355 11.951813) scale(0.54345244 1.0)" >
+		<tspan x="8.205407" y="13.423813">ChipsetNetWeb</tspan>
+	</text> 
+
+	<text 
+		font-size="3.9241338"
+		font-family="lora"
+		fill="url(#fillGrad3)"
+		stroke-width="0"
+		fill-opacity="1.0"
+		text-anchor="start"
+  		transform="rotate(-0.0 12.2333355 11.951813) scale(0.54345244 1.0)" >
+
+		<tspan x="8.205407" y="13.423813">ChipsetNetWeb</tspan>
+	</text>
+</svg>
+
+    </header>
+
+    <section>
+        <div class="content">
+            <div class="messages">
+
+            </div>
+            <form class="footer" onsubmit="return false;">
+                <input type="text" placeholder="Ваше сообщение..">
+                <button type="submit">отправить</button>
+            </form>
+        </div>
+
+        <template data-template="message">
+    <div class="message">
+      <div class="message__name"></div>
+      <div class="message__bubble"></div>
+    </div>
+  </template>
+    </section>
+    <script src="motors/text-chat-motor.js"></script>
+
+</body>
+
+</html>
