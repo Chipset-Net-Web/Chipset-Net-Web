@@ -21,15 +21,21 @@ h2 {
     font-size: 30px;
 }
 
+ h3 {
+    color:#127688;
+    background: #dfe9b5e7;
+    font-size: 25px;
+}
+
 div {
-    background: #78df5e;
-    width: 450px;
-    margin: 5% auto;
+    background:#9fead6d9;
+    width: 350px;
+    margin: 3% auto;
 }
 
 section {
     position: center;
-    color: #ffffff;
+    color: rgb(247,247,247);
     background: rgba(77, 54, 10, 0.445);
 }
 
@@ -37,6 +43,7 @@ ul p {
     text-align: center;
     font-size: 30px;
     color: #1d0d57;
+    
 }
 
 li {
