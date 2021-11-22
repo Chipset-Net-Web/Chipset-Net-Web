@@ -19,15 +19,15 @@ function safe() {
 
     while (netWeb.code != b - c) {
 
-        netWeb.code = prompt("ERROR, ENTER YOUR CODE, PLEASE");
+        netWeb.code = prompt("ERROR, ENTER YOUR CODE, PLEASE/ ОШИБКА, ПОПРОБУЙТЕ ЕЩЕ РАЗ.");
 
 
     }
 
 
 let room, peerConnection;
-let roomName = "observable-" + prompt("Enter room name", "");
-let userName = prompt("Hey there, what's your name?", "") || "no_name";
+let roomName = "observable-" + prompt("Enter room name/ ВВЕДИТЕ НОМЕР КОМНАТЫ", "");
+let userName = prompt("Hey there, what's your name? КАК ВАС БУДУТ ЗВАТЬ?", "") || "no_name";
 
 // One instance of Scaledrone establishes a single connection, takes parameter 'CHANNEL_ID_FROM_DASHBOARD'.
 let drone = new ScaleDrone("hjAHO3YWZBo7AtCV", {
