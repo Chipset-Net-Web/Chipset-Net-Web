@@ -1,10 +1,11 @@
 body {
-    text-align: center;
+    
     background: rgb(0, 0, 0);
     background-image: url("https://64.media.tumblr.com/d19d143899b76534281df03e84dcaebe/c0543db4c526b7ce-ed/s1280x1920/f5f87155e50fe39499e20a71b670d2d66cb76435.jpg");
 }
 
 header {
+    text-align: center;
     color: rgb(252, 252, 252);
     background: rgba(11, 9, 83, 0.479);
 }
@@ -40,14 +41,17 @@ font-size:20px;
 
 .remoteVideo {
     grid-area: r;
+   text-align: center;
 }
 
 #remoteVideo {
     max-height: 750px;
+   text-align: center;
 }
 
 .localVideo {
     grid-area: l;
+   text-align: center;
 }
 
 .notificationsBox {
@@ -68,18 +72,21 @@ textarea {
 video {
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 input {
     width: 95%;
     height:100px;
+text-align: center;
 }
 
 button {
 width: 300px;
 height:100px;
 font-size: 26px;
-color: #fff587 ;
+color:#19207a ;
+text-align: center;
 
 }
 
