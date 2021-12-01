@@ -1,20 +1,25 @@
-function safe() {
-    let netWeb = {
-        code: prompt("Write an access code/Введите код доступа:"),
-        net: 60 + 7,
-        web: 70 + 3,
+function tester (en = prompt("Введите код"))//пользовательский ввод
+{
+let mas = [1,2,3,4,5,6,7,8,9,0];//массив 
+let netWeb = {//объект
+a1:0,a2:1,a3:2,a4:3,a5:4,a6:5,
+a7:6,a8:7,a9:8,a10:9,a11:10,
+}
 
-    }
-
-    let b = netWeb.net;
-    let c = netWeb.web;
-
-    while (netWeb.code != b - c) {
-
-        netWeb.code = prompt("ERROR, ENTER YOUR CODE, PLEASE");
+let b1 = netWeb.a3+mas[4];//
+let b2 = mas[2]+netWeb.a2;//
+let c1 = b2-b1;//
+let a12 = c1+mas[9,1];//
 
 
-    }
+
+while (a12!=en) //цикл запускается, если не рано
+{ 
+
+en=prompt ("ERROR/ошибка, ENTER YOUR CODE, PLEASE/Введите код доступа ещё раз");
+// ошибка 
+  
+ } 
 
 
     const possibleEmojis = [
@@ -207,4 +212,4 @@ function safe() {
 
     insertMessageToDOM({ content: 'Chat URL is ' + location.href });
 }
-safe();
+tester();
